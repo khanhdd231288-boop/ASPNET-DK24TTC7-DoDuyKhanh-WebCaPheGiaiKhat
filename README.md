@@ -18,3 +18,6 @@ ASPNET
 - Tìm hiểu quản lý trạng thái và các đối tượng
 - Cài đặt phần mềm Visual studio 2026, SQL sever 2026.
 - Tạo hosting free cho mã nguồn ASP.NET
+## Tuần 4
+- Làm việc ADO.NET và các đối tượng truy cập CSDL
+- Sử dụng SQL xây dựng cơ sở dữ liệu
