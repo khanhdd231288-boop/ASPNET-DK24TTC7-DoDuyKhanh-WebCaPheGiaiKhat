@@ -14,6 +14,7 @@ ASPNET
 - Tìm hiểu sử dụng control của ASP.NET
 - Lựa chọn đề tài và đăng ký
 ## Tuần 3
-- Tiếp tực tìm hiểu sử dụng control
+- Tiếp tục tìm hiểu sử dụng control
 - Tìm hiểu quản lý trạng thái và các đối tượng
 - Cài đặt phần mềm Visual studio 2026, SQL sever 2026.
+- Tạo hosting free cho mã nguồn ASP.NET
