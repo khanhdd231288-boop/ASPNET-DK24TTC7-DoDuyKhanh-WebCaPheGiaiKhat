@@ -6,18 +6,6 @@ ASPNET
 - Họ tên: Đỗ Duy Khánh
 - Lớp: DK24TTC7
 - MSSV: 170124799
+- SĐT: 0971310312
+- Mail: khanhdd231288@tvu-onschool.edu.vn
 - Giảng viên hướng dẫn: ThS. Đoàn Phước Miền
-# Tiến độ thực hiện
-## Tuần 1
-- Tìm hiểu về ASP NET và ngôn ngữ lập trình C sharp
-## Tuần 2
-- Tìm hiểu sử dụng control của ASP.NET
-- Lựa chọn đề tài và đăng ký
-## Tuần 3
-- Tiếp tục tìm hiểu sử dụng control
-- Tìm hiểu quản lý trạng thái và các đối tượng
-- Cài đặt phần mềm Visual studio 2026, SQL sever 2026.
-- Tạo hosting free cho mã nguồn ASP.NET
-## Tuần 4
-- Làm việc ADO.NET và các đối tượng truy cập CSDL
-- Sử dụng SQL xây dựng cơ sở dữ liệu
