@@ -89,7 +89,7 @@ Nếu dùng SQL Server Authentication thì có thể sửa thành:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=.;Database=LaptopStore;User Id=sa;Password=your_password;TrustServerCertificate=True"
+  "DefaultConnection": "Server=.;Database=DoDuyKhanhStore;User Id=sa;Password=your_password;TrustServerCertificate=True"
 }
 ```
 
