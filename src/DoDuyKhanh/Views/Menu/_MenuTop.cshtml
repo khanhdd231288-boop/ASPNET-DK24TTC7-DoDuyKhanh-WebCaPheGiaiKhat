@@ -1,0 +1,92 @@
+﻿@model IEnumerable<MEGATECH.Models.EF.Category>
+
+<style>
+    /* Reset và thiết lập Font */
+    .navbar_menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        gap: 30px; /* Khoảng cách giữa các item menu */
+    }
+
+    .navbar_menu li {
+        position: relative;
+    }
+
+    .navbar_menu li a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1e1e27;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 10px 0;
+        transition: color 0.3s ease;
+        display: block;
+    }
+
+    /* Hiệu ứng gạch chân chạy từ giữa sang hai bên khi hover */
+    .navbar_menu li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #fe4c50; /* Màu đỏ thương hiệu */
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .navbar_menu li a:hover {
+        color: #fe4c50;
+        text-decoration: none;
+    }
+
+    .navbar_menu li a:hover::after {
+        width: 100%;
+    }
+
+    /* Active State - Nếu sau này Nhàn muốn đánh dấu trang đang đứng */
+    .navbar_menu li.active a {
+        color: #fe4c50;
+    }
+    
+    .navbar_menu li.active a::after {
+        width: 100%;
+    }
+
+    /* Responsive cho Mobile (nếu cần ẩn đi hoặc chuyển sang menu dọc) */
+    @@media (max-width: 991px) {
+        .navbar_menu {
+            display: none; /* Hoặc tùy biến theo kiểu Hamburger của bạn */
+        }
+    }
+</style>
+
+@if (Model != null && Model.Any())
+{
+    <ul class="navbar_menu">
+        @foreach (var item in Model)
+        {
+            var url = item.Alias;
+            
+            // Xử lý logic Link/Alias
+            if (item.Alias != null && item.Alias.Equals("trang-chu"))
+            {
+                url = "";
+            }
+            if (!string.IsNullOrEmpty(item.Link))
+            {
+                url = item.Link;
+            }
+            
+            <li>
+                <a href="/@url">@item.Title</a>
+            </li>
+        }
+    </ul>
+}

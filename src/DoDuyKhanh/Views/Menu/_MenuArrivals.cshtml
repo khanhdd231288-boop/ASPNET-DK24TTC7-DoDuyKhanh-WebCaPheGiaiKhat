@@ -1,0 +1,136 @@
+﻿@model IEnumerable<MEGATECH.Models.EF.ProductCategory>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary-color: #fe4c50; /* Màu đỏ chủ đạo giống logo/nút All của bạn */
+        --text-color: #1e1e27;
+        --bg-light: #f5f5f5;
+    }
+
+    .arrivals-section {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Tựa đề Section */
+    .section_title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+
+    .section_title h2 {
+        font-weight: 700;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .section_title::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: var(--primary-color);
+        margin: 15px auto 0;
+    }
+
+    /* Thanh lọc sản phẩm (Filter) */
+    .new_arrivals_sorting {
+        display: inline-block;
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        margin-bottom: 50px;
+    }
+
+    .arrivals_grid_sorting {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .grid_sorting_button {
+        padding: 10px 25px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #51545f;
+        border: 1px solid #ebebeb;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        background: transparent;
+    }
+
+    .grid_sorting_button:hover {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .grid_sorting_button.active {
+        background: var(--primary-color);
+        color: #ffffff;
+        border-color: var(--primary-color);
+        box-shadow: 0 4px 15px rgba(254, 76, 80, 0.3);
+    }
+
+    /* Fix layout Isotope */
+    .product-grid {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* Responsive cho mobile */
+    @@media (max-width: 768px) {
+        .grid_sorting_button {
+            padding: 8px 15px;
+            font-size: 12px;
+        }
+    }
+</style>
+
+@if (Model != null && Model.Any())
+{
+    <div class="arrivals-section container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">
+                    <h2>SẢN PHẨM NƯỚC GIẢI KHÁT PHỔ BIẾN</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <div class="new_arrivals_sorting">
+                    <ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+                        <li class="grid_sorting_button active is-checked" data-filter="*">Tất cả</li>
+                        @foreach (var item in Model)
+                        {
+                            <li class="grid_sorting_button" data-filter=".@item.Alias">@item.Title</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                    @Html.Action("Partial_ItemsByCateId", "Products")
+                </div>
+            </div>
+        </div>
+    </div>
+}

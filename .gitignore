@@ -1,0 +1,64 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# ASP.NET generated files
+*.user
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.log
+
+# Visual Studio files
+.vs/
+*.vssscc
+*.vspscc
+*.sln.docstates
+
+# IIS Express
+/.vs/
+/IISExpress/
+*.dbmdl
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+
+# Web publish output
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Azure
+*.azurePubxml
+
+# Entity Framework
+*.edmx.diagram
+
+# Others
+*.bak
+*.swp
