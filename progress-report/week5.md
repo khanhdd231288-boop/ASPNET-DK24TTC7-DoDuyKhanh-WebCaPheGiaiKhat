@@ -12,8 +12,8 @@ Tuần 5
   - XmlDataDocument
 - Tìm hiểu cách chuyển dữ liệu từ ADO.NET sang XML.
 - Tìm hiểu cách chuyển dữ liệu từ XML sang ADO.NET
-- Thực hành kết hợp XML với SQL Server
-- Xây dựng trang chủ, đăng nhập
+- Thực hành kết hợp XML với SQL Server.
+- Xây dựng trang chủ, đăng nhập.
 - Xây dựng các trang truy cập như nhân viên, khách hàng
 - Tạo trang quản lý thông tin và phân quyền chức vụ
 ## Kết quả đạt được
