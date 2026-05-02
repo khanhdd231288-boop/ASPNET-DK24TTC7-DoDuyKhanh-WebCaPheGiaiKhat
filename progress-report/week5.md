@@ -13,18 +13,18 @@ Tuần 5
 - Tìm hiểu cách chuyển dữ liệu từ ADO.NET sang XML
 - Tìm hiểu cách chuyển dữ liệu từ XML sang ADO.NET
 - Thực hành kết hợp XML với SQL Server
-
+- Xây dựng trang chủ, đăng nhập
+- Xây dựng các trang truy cập như nhân viên, khách hàng
+- Tạo trang quản lý thông tin và phân quyền chức vụ
 ## Kết quả đạt được
 - Hiểu được vai trò của XML trong ASP.NET
 - Biết cách chuyển dữ liệu từ DataSet sang XML
 - Biết cách sử dụng XmlDocument và XmlDataDocument để xử lý dữ liệu
 - Nắm được cách sử dụng XML như một kho lưu trữ dữ liệu tạm thời
-- Có thể áp dụng XML cho việc trao đổi và hiển thị dữ liệu trong website
-
+- Có thể áp dụng XML cho việc trao đổi và hiển thị dữ liệu trong website.
 ## Khó khăn
 - Việc xử lý XML còn phức tạp, cần luyện tập thêm để thành thạo
 - Cần thời gian để hiểu rõ mối quan hệ giữa XML và ADO.NET
-
 ## Kế hoạch tuần tiếp theo
 - Áp dụng XML và ADO.NET vào dự án
 - Xây dựng chức năng hiển thị dữ liệu từ cơ sở dữ liệu
