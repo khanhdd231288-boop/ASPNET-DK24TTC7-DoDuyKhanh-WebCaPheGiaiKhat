@@ -7,8 +7,8 @@ Tuần 5
 - Tìm hiểu về XML trong ASP.NET.
 - Nghiên cứu các lớp xử lý XML trong không gian tên System.Xml
 - Tìm hiểu các lớp chính:
-  - XmlReader, XmlWriter
-  - XmlDocument, XmlNode
+  - XmlReader, XmlWriter.
+  - XmlDocument, XmlNode.
   - XmlDataDocument
 - Tìm hiểu cách chuyển dữ liệu từ ADO.NET sang XML
 - Tìm hiểu cách chuyển dữ liệu từ XML sang ADO.NET
