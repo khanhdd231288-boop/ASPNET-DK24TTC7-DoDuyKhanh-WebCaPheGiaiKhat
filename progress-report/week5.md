@@ -10,7 +10,7 @@ Tuần 5
   - XmlReader, XmlWriter.
   - XmlDocument, XmlNode.
   - XmlDataDocument
-- Tìm hiểu cách chuyển dữ liệu từ ADO.NET sang XML
+- Tìm hiểu cách chuyển dữ liệu từ ADO.NET sang XML.
 - Tìm hiểu cách chuyển dữ liệu từ XML sang ADO.NET
 - Thực hành kết hợp XML với SQL Server
 - Xây dựng trang chủ, đăng nhập
