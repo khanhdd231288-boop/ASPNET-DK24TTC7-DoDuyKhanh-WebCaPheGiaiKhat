@@ -4,7 +4,7 @@
 Tuần 7
 
 ## Nội dung thực hiện
-- Xây dựng trang thống kê báo cáo cho website
+- Xây dựng trang thống kê báo cáo cho website.
 - Thống kê doanh thu (Hiển thị biểu đồ về báo cáo doanh thu dựa vào khoảng thời gian đã chọn từ fromDay và toDay)
 - Thống kê sản phẩm
 - Thống kê hình thức mua hàng
