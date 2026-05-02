@@ -4,7 +4,7 @@
 Tuần 5
 
 ## Nội dung thực hiện
-- Tìm hiểu về XML trong ASP.NET
+- Tìm hiểu về XML trong ASP.NET.
 - Nghiên cứu các lớp xử lý XML trong không gian tên System.Xml
 - Tìm hiểu các lớp chính:
   - XmlReader, XmlWriter
