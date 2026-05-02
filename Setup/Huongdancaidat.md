@@ -147,11 +147,6 @@ setup/
 Update-Database
 ```
 
-### Không đăng nhập được admin
-
-- Kiểm tra tài khoản admin đã được thêm vào bảng `Customers` chưa
-- Kiểm tra cột `Role` đã có giá trị `Admin` chưa
-
 ---
 
 ## 10. Kết luận
